@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="styles.css">
    <script src="script.js" defer></script>
+   
        <title>CCXP 2022</title>
 
 </head>
@@ -53,17 +54,27 @@
 <section id="compre">
     
     <div id="ingressos">
-        <img src="qui.svg" alt="Ingresso imagem de quinta" srcset="">
-        <img src="sex.svg" alt="Ingresso imagem de sexta" srcset="">
-        <img src="sa.svg" alt="Ingresso imagem de sábado" srcset="">
-        <img src="dom.svg" alt="Ingresso imagem de domingo" srcset="">
+        <img class="cards-ingressos" src="qui.svg" onclick="selectCard('#quinta')" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="Ingresso imagem de quinta" srcset="">
+        <img class="cards-ingressos" src="sex.svg" onclick="selectCard('#sexta')" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" id="sexta" alt="Ingresso imagem de sexta" srcset="">
+        <img class="cards-ingressos" src="sa.svg" onclick="selectCard('#sabado')" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" alt="Ingresso imagem de sábado" srcset="">
+        <img class="cards-ingressos" src="dom.svg" onclick="selectCard('#domingo')" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id="domingo" alt="Ingresso imagem de domingo" srcset="">
     </div>
 
     <div id="botao-compra">
 
-        <button>GARANTA O SEU!</button>
+        <button onclick="showSelectedCards()">GARANTA O SEU!</button>
 
     </div>
 </section>
+
+<div>
+    <form action="https://www.google.com">
+        <input type="email" placeholder=" Seu email" required />
+        <input type="submit">
+
+    </form>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>
