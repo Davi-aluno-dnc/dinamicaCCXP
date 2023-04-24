@@ -21,6 +21,7 @@ function checkKeyboardCode(){
 
 function addKeyboardEventListeners(){
     document.addEventListener('keydown', (event) => {
+        var ingresso0 = document.getElementById("quinta")
         var ingresso1 = document.getElementById("quinta")
         var ingresso2 = document.getElementById("sexta")
         var ingresso3 = document.getElementById("sabado")
@@ -28,6 +29,7 @@ function addKeyboardEventListeners(){
 
         var code = event.code
         if(code == 'Digit1'){
+            ingresso0.classList.remove("card-highlight")
             ingresso1.classList.toggle("card-highlight")
             ingresso2.classList.remove("card-highlight")
             ingresso3.classList.remove("card-highlight")
