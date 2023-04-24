@@ -21,7 +21,7 @@ function checkKeyboardCode(){
 
 function addKeyboardEventListeners(){
     document.addEventListener('keydown', (event) => {
-        var ingresso0 = document.getElementById("quinta")
+        
         var ingresso1 = document.getElementById("quinta")
         var ingresso2 = document.getElementById("sexta")
         var ingresso3 = document.getElementById("sabado")
